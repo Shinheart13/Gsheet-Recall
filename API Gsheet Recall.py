@@ -34,7 +34,7 @@ def main():
 
     # Call the Sheets API
     SPREADSHEET_ID = '133QoEZ2i5xkUMGgdDnPjahxUXv3Fr0zyo7wp4yGJEn4'
-    RANGE_NAME = 'Sheet1'  # Adjust the range as needed
+    RANGE_NAME = 'Sheet1!A:J'  # Adjust the range as needed
     sheet = service.spreadsheets()
 
     result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME).execute()
